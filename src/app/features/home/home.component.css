@@ -1,0 +1,39 @@
+.sidenav {
+  height: 100%;
+  position: fixed;
+  border-right: 1px solid black;
+  width: 150px;
+}
+
+.sidenav a {
+  display: block;
+  text-align: center;
+  margin-top: 10%;
+  color: blue;
+}
+
+.main {
+  padding-left: 150px;
+  text-align: center;
+  float: inline-end;
+}
+
+header {
+  border-bottom: 1px solid black;
+  height: 70px;
+}
+
+header > strong {
+  line-height: 65px;
+  margin-left: 4%;
+  font-size: 30px;
+}
+
+header > button {
+  float: right;
+  margin: 15px;
+  margin-right: 4%;
+  width: 10%;
+  background-color: darkgray;
+  border-color: black;
+}

@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+
+button {
+    background-color: darkgray;
+    border-color: black;
+}
+
+.welcome {
+    margin: 25%
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.formHeader {
+    margin-left: 10px;
+    padding-right: 80%;
+}
+
+.container-fluid {
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+.row {
+    margin: 25px;
+}
+
+#buttons {
+    text-align: right;
+}
+
+input {
+    width: 100%;
+}

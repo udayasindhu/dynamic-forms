@@ -1,0 +1,27 @@
+label {
+  margin-right: 15%;
+}
+
+span {
+  margin-bottom: 9%;
+}
+
+form {
+  display: grid;
+  margin: 21%;
+}
+
+.row {
+  align-items: center;
+}
+
+button {
+  margin-top: 5%;
+  background-color: darkgray;
+  border-color: black;
+}
+
+span {
+  text-align: center;
+  width: 100%;
+}

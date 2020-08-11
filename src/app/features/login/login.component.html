@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="loginForm" class="col-6" autocomplete="off">
+            <span class="alert alert-danger" *ngIf="errorMsg">
+                {{errorMsg}}
+            </span>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input formControlName="uname" type="text" placeholder="Enter username"
+                    class="form-control"/>
+                <div class="alert alert-danger" *ngIf="submitted && !loginForm.value.uname">
+                    Username is required
+                </div>
+            </div>
+            <label for="password">Password</label>
+            <input formControlName="pass" type="password" placeholder="Enter password"
+                class="form-control"/>
+            <div class="alert alert-danger" *ngIf="submitted && !loginForm.value.pass">
+                Password is required
+            </div>
+            <button class="btn" (click)="login()">
+                Login
+            </button>
+        </form>
+    </div>
+</div>

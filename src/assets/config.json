@@ -1,0 +1,4 @@
+{
+    "expiryTime": 5,
+    "persistSessionAttr": ["config"]
+}

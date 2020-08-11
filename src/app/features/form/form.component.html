@@ -1,0 +1,30 @@
+<div *ngIf="!selectedItem" class="welcome">
+    Welcome to test application, you can click on the link in the left side bar
+</div>
+
+<div class="container" *ngIf="selectedItem">
+    <div class="formHeader">Dynamic form of {{selectedItem.itemLabel}}</div>
+    <div class="container-fluid">
+        <form [formGroup]="itemsForm">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12" *ngFor="let field of totalFields;let i = index;let even = even;">
+                    <span *ngIf="even">
+                        <div class="col-lg-6 col-sm-6" style="float: left;">
+                            <label for="{{totalFields[i].fieldLabel}}">Field {{totalFields[i].fieldId}}</label>
+                            <input type="text" formControlName={{totalFields[i].fieldLabel}} />
+                        </div>
+                        <div class="col-lg-6 col-sm-6" style="float: right;">
+                            <label for="{{totalFields[i+1].fieldLabel}}">Field {{totalFields[i+1].fieldId}}</label>
+                            <input type="text" formControlName={{totalFields[i+1].fieldLabel}} />
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="col-sm-12 mb-3 mt-3" id="buttons">
+                <button class="btn" type="submit" (click)="submitData()">Submit</button>&nbsp;
+                <button class="btn" type="reset" (click)="itemsForm.reset()">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

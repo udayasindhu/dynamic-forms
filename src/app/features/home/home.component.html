@@ -1,0 +1,12 @@
+<div>
+  <header>
+    <strong>Abc Limited</strong>
+    <button class="btn" (click)="logout()">Logout</button>
+  </header>
+  <div class="sidenav" style="float: left;">
+    <a (click)="emitSelectedItem(item)" *ngFor="let item of itemList" style="cursor: pointer;"><u>{{ item.itemLabel }}</u></a>
+  </div>
+  <div class="main">
+    <app-form [selectedItem]="selectedItem"></app-form>
+  </div>
+</div>
